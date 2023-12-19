@@ -1,0 +1,49 @@
+<!-- DAY-6 ASSIGNMENTS
+-:  Login page -
+	Email address or phone number
+	password
+	Login button - when clicked display page saying logged in successfully
+	Forgot password link - when clicked display page with forgot password form
+					(email, old password and new pass)
+	Create Account/Signup - when clicked opens a page with create account form
+-->
+<!--  Create Account / Signup  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Signup </title>
+    
+</head>
+
+<body>
+    <center>
+        <h1>Creat Account </h1>
+    </center>
+    
+                <form action="/HTML/Assignment/Day-6/Task-1.html" id="SignupForm" onsubmit="return signUp()" style="text-align: center;"><br>
+                    <br><label for="fullName"> Full Name -:</label>
+                    <input type="text" id="fullName" name="fullName" required><br>
+
+                    <br><label for="email"> Email-: &nbsp; &nbsp; &nbsp; &nbsp;</label>
+
+                    <input type="email" id="email" name="email" required><br>
+
+                    <br> <label for="phoneNumber"> Phone No -: </label>
+
+                    <input type="tel" id="phoneNumbe" name="phoneNumbe" pattern="[0-9]{10}"
+                        placeholder="Enter 10-digit number" required><br>
+
+                    <br><label for="password"> Password-:</label>
+
+                    <input type="password" id="password" name="password" required><br><br>
+                    <input type="submit" value="Signup">
+
+                </form>
+                <br>
+          
+</body>
+
+</html>

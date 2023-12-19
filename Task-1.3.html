@@ -1,0 +1,31 @@
+<!-- DAY-6 ASSIGNMENTS
+-:  Login page -
+	Email address or phone number
+	password
+	Login button - when clicked display page saying logged in successfully
+	Forgot password link - when clicked display page with forgot password form
+					(email, old password and new pass)
+	Create Account/Signup - when clicked opens a page with create account form
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot </title>
+</head>
+<body>
+    <center><h1>Forgot Password </h1></center>
+    <form action="/HTML/Assignment/Day-6/Task-1.5.html" id="forgotPasswordForm" onsubmit="return resetPassword()" style="text-align: center;">
+    <label for="email"><b> Email-: </b></label><br>
+    <input type="email"  id="email" name="email" required> <br>
+
+    <label for="oldPassword"> <b>Old Password-:</b></label><br>
+    <input type="password" id="oldPassword" name="oldPassword" required><br>
+
+    <label for="newPassword"><b>New Password: <b></b></label><br>
+    <input type="password" id="newPassword" name="newPassword" required><br><br>
+    <input type="submit" value="Reset Password">
+</form>
+</body>
+</html>
