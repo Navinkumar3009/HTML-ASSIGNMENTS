@@ -1,0 +1,93 @@
+<!-- DAY-7th Assignments  
+1. Login page -
+	Email address or phone number
+	password
+	Login button - when clicked display page saying logged in successfully
+	Forgot password link - when clicked display page with forgot password form
+					(email, old password and new pass)
+	Create Account/Signup - when clicked opens a page with create account form
+2. Create a registration page with validations using pattern (fieldset and legend)
+		1. Name has to accept only alphabets
+		2. Phone number should have only digits and length - 10
+		3. Age should be greater than 18
+		4. Date Of birth should be less than 2006
+		5. Add a dropdown 
+		6. Add a datalist
+		7. Additional Comments section (text area )
+    -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page </title>
+
+
+
+
+</head>
+
+<body>
+    <center>
+        <h1>Registration</h1>
+    </center>
+    <form action="/HTML/Assignment/Day-7/Task-2.1.html"  id="registrationForm" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Personal Information-:</legend>
+            <!-- name field -->
+            <b>
+                <label for="alphabeticInput"> Full Name -:</label>
+                <input type="text" id="name" name="name" pattern="[A-Z-a-z]+" maxlength="50" minlength="15" required>
+
+                <!-- Phone number is field -->
+                <label for="Phone"> Phone No -:</label>
+                <input type="tel" id="Phone" name="Phone" pattern="[0-9]{10}" required><br>
+                <!-- age field -->
+                <br><label for="age"> Age -:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="age" name="age" min="19" required>
+
+
+                <!-- Date of birth -->
+                <label for="dob"> Date of Birth -:</label>
+                <input type="date" id="dob" name="dob" max="2005-12-31" required><br><br>
+
+                <!-- Dropdown -->
+                <label for="gender"> Gender -: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select name="gender" id="gender" required>
+                    <option value="">Select </option>
+                    <option value="male"> Male </option>
+                    <option value="female"> Female</option>
+                    <option value=" other"> Other</option>
+                </select>
+
+                <!-- Datalist -->
+                <label for="city">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City -: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input list="cities" id="city" name="city" required>
+                <datalist id="cities">
+                    <option value="Mumbai">
+                    <option value="Solapur">
+                    <option value=" Pune">
+                </datalist><br><br>
+                
+                
+                <!--  Additional Comments section -->
+                <label for="Comments" >Additional Comments -:</label><br>
+                <textarea id="Comments" name="Comments" rows="4" cols="50"></textarea><br><br>
+
+                <!-- submit button -->
+                <center>
+               <input type="submit" value="registration">
+                
+
+
+            </b>
+        </fieldset>
+
+    </form>
+
+
+
+</body>
+
+</html>
